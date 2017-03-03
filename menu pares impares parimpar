@@ -1,0 +1,66 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void numerosimpares(int n){
+	int i,s=1;
+	for(i=1;i<=n;i++)
+	{ cout<<s<<" ";
+	s=s+2;
+	}
+}
+ 
+void numerosimparesdescendente(int n){
+	int i,p=(n*2)-1;
+	for(i=1;i<=n;i++)
+	{ cout<<p<<" ";
+	p=p-2;
+	}
+}
+void numerosparesimpares(int n){
+	int i,imp=1,par=2,k=0;
+	cout<<"los primeros numeros par e impar son ----->>>\n\n";
+	for(i=0;i<n;i++){
+		if(k==0){
+			cout<<par<<" ";
+			par=par+2;
+			k=1;
+		}else{
+			cout<<imp<<" ";
+			imp=imp+2;
+			k=0;
+
+		}
+	}
+} 
+
+
+void main(){
+ int n,opcion;
+ cin>>n;
+ do{
+ cout<<".....................menu.......................\n";
+ cout<<"1.numerosimpares\n";
+ cout<<"2.numerosimpares descendente\n";
+ cout<<"3.mostrar par-impares\n";
+ cout<<"0.salir\n";
+ cout<<"eliga opcion\n";
+ cin>>opcion;
+ switch(opcion){
+	 case 1: numerosimpares(n);
+				cout<<"mostrar impares"<<n;
+			    break;
+		case 2: numerosimparesdescendente(n);
+			    cout<<"mostrar impares acendentes:"<<n;
+				break;
+		case 3: numerosparesimpares(n);
+			    break;
+		case 0: cout<<"salir";
+			break;
+		}
+
+  }while(opcion!=0);
+ getch ();
+
+}

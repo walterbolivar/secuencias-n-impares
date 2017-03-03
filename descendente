@@ -1,0 +1,20 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void numerosimparesdescendente(int n){
+	int i,p=(n*2)-1;
+	for(i=1;i<=n;i++)
+	{ cout<<p<<" ";
+	p=p-2;
+	}
+}
+ void main(){
+ int n;
+ cin>>n;
+ numerosimparesdescendente(n);
+
+ getch ();
+
+ }

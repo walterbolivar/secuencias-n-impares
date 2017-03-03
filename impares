@@ -1,0 +1,20 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void numerosimpares(int n){
+	int i,s=1;
+	for(i=1;i<=n;i++)
+	{ cout<<s;
+	s=s+2;
+	}
+}
+ void main(){
+ int n;
+ cin>>n;
+ numerosimpares(n);
+
+ getch ();
+
+ }
